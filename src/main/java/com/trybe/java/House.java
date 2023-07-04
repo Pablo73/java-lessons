@@ -106,5 +106,16 @@ public class House {
     this.altura = altura;
   }
 
+  /**
+   * Calculates the Body Mass Index (BMI) of the resident.
+   * 
+   * @return The BMI of the resident.
+   */
+
+  public double calcularImc() {
+    double result = this.peso / (this.altura * this.altura);
+    return result;
+  }
+
 }
 
