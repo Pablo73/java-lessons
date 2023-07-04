@@ -1,44 +1,40 @@
 package com.trybe.java;
 
 /**
- * Class .
+ * Class Smart House.
  **/
 
 public class SmartHouse {
   private boolean lampada;
 
-  public SmartHouse() {
+  public SmartHouse(boolean lampada) {
     this.lampada = false;
   }
 
   /**
-   * Liga lâmpada, se estiver desligada.
+   * Turn on the lamp, if it is off..
    */
 
   public void ligarLampada() {
     if (this.lampada == false) {
       this.lampada = true;
-    } else {
-      System.out.println("A lampada já está desligada");
     }
   }
 
   /**
-   * Desliga a lâmpada se estiver ligada.
+   * Turn off the lamp if it's on.
    */
 
   public void desligarLampada() {
     if (this.lampada == true) {
       this.lampada = false;
-    } else {
-      System.out.println("A lampada já está ligada");
     }
   }
 
   /**
-   * Verifica a situação da lâmpada se está ligada ou desligada.
+   * Checks the status of the lamp if it is on or off.
    * 
-   * @return true se estiver ligada, false se estiver desligada.
+   * @return true if on, false if off.
    */
 
   public boolean isLampadaLigada() {
