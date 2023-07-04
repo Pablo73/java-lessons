@@ -112,7 +112,7 @@ public class House {
    * @return The BMI of the resident.
    */
 
-  public double calcularImc() {
+  public double calculaImc() {
     double result = this.peso / (this.altura * this.altura);
     return result;
   }

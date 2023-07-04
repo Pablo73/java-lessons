@@ -8,21 +8,40 @@ import java.util.Map;
  **/
 
 public class SmartHouse {
-  private boolean lampada;
+  private boolean lampada = false;
+  private House house = null;
   private Map<String, String> estados = new HashMap<>();
 
   /**
    * SmarthHouse class constructor.
    * 
-   * @param lampada Initial state of the lamp (on/off).
    */
 
 
-  public SmartHouse(boolean lampada) {
-    this.lampada = false;
+  public SmartHouse() {
     this.estados.put("PE", "Pernambuco");
     this.estados.put("SC", "Santa Catarina");
     this.estados.put("AM", "Amazonas");
+  }
+
+  /**
+   * Sets the house object.
+   * 
+   * @param house The house object.
+   */
+
+  public void setHouse(House house) {
+    this.house = house;
+  }
+
+  /**
+   * Gets the house object.
+   * 
+   * @return The house object.
+   */
+
+  public House getHouse() {
+    return house;
   }
 
   /**
