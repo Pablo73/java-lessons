@@ -41,5 +41,19 @@ public class SmartHouse {
     return this.lampada;
   }
 
+  /**
+   * Simulate internet connection.
+   */
+
+  public boolean conectarInternet() {
+    for (int number = 0; number < 3; number++) {
+
+      if (Math.random() < 0.5) {
+        return true;
+      }
+    }
+    return false;
+  }
+
 }
 
